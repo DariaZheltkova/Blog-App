@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+	background-color: #181818;
+	font-size: 1.4rem;
+	color: #fff;
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, SegoeUI, Roboto, HelveticaNeue, Arial, NotoSans, sans-serif;
+}
+
+.main {
+	padding-top: 100px;
+}
+
+.container {
+	max-width: 70rem;
+	margin: 0 auto;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.add-post {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 2rem;
+	margin-bottom: 3rem;
+	background-color: #121212;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .45);
+	border-radius: 5px;
+}
+
+.add-post__form {
+	display: flex;
+	/* align-items: flex-end; */
+	justify-content: space-between;
+}
+
+.add-post__input {
+	display: flex;
+	flex-direction: column;
+}
+
+.add-post__title,
+.add-post__textarea {
+	height: 100px;
+	width: 700px;
+	display: block;
+	/* flex-grow: 1; */
+	border: none;
+	background: transparent;
+	font-size: 1.5rem;
+	color: #fff;
+	font-family: inherit;
+	resize: none;
+	overflow-y: auto;
+}
+
+.add-post__title {
+	margin-bottom: 10px;
+	height: 34px;
+}
+
+.add-post__title::placeholder,
+.add-post__textarea::placeholder {
+	color: #D2D2D2;
+}
+
+.add-post__title:focus,
+.add-post__title:active,
+.add-post__textarea:focus {
+	outline: none;
+	background-color: transparent;
+}
+
+.add-post__form-actions {
+	width: 120px;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.add-post__send {
+	display: block;
+	width: 4.4rem;
+	height: 4.4rem;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color .2s linear;
+	background: url(../img/send.svg) no-repeat center;
+	background-size: 50%;
+	margin-left: 1.5rem;
+	background-color: #3137C9;
+}
+
+.posts__message {
+	text-align: center;
+}
+
+.post {
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	background-color: #202020;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .35);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.post__title {
+	margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.post__content {
+	margin-bottom: 2rem;
+}
+
+.post__description{
+	font-size: 1.4rem;
+	color: #D2D2D2;
+}
+
+.post__footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.post__data {
+	display: flex;
+	color: #828282;
+	line-height: 1.2rem;
+}

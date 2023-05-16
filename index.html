@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog App</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<!-- Add post -->
+	<main class="main">
+		<div class="container">
+			<div class="add-post">
+				<div class="add-post__form" action="/" method="post">
+					<form class="add-post__input">
+						<input class="add-post__title" id="add-post__title" type="text" placeholder="Заголовок поста">
+						<textarea class="add-post__textarea" id="add-post__text" name="post-text" placeholder="Напишите что-нибудь"
+							data-autoresize></textarea>
+					</form>
+				</div>
+				<div class="add-post__form-actions">
+					<button class="add-post__send" id="add-post__send"></button>
+				</div>
+			</div>
+
+			<div class="posts" id="posts">
+				<p class="posts__message">Публикаций нет...</p>
+				<!-- <div class="post">
+					<div class="post__content">
+						<p class="post__description">
+							
+						</p>
+					</div> -->
+					<!-- <div class="post__footer">
+						<ul class="post__data">
+							<li class="post__data-item">
+								<time datetime="2020-06-21 19:20">21.06.2020</time>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
